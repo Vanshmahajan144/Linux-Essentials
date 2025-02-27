@@ -79,3 +79,31 @@ Note: Shortcuts in file managers can vary between GNOME Files, Dolphin, Thunar, 
 | Ctrl + Shift + Tab        | Switch to the previous tab                         |
 | Alt + F4                  | Close the active window/application                |
 
+# Command-Line Shortcuts (Aliases)
+
+You can create shortcuts for frequently used commands using aliases.
+
+Example:
+
+#alias ll='ls -lah'
+#alias gs='git status'
+#alias c='clear'
+
+To make them permanent, add them to ~/.bashrc or ~/.zshrc and run:
+
+source ~/.bashrc  # or source ~/.zshrc
+
+
+# Creating Shortcuts (Symlinks)
+
+To create a shortcut (symbolic link) to a file or directory:
+
+ln -s /path/to/original /path/to/shortcut
+
+Example:
+
+#ln -s /var/www/html ~/myweb
+
+This creates myweb as a shortcut to /var/www/html.
+
+Do you need shortcuts for a specific Linux task?
